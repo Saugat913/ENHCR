@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div id="nav-bar">
+        <div class="logo-area">
+            <img src="{{ url_for('static', filename='logo.png') }}">
+            <a href="/help"><span>Help</span></a>
+
+        </div>
+        <div class="nav-area">
+            <a href="/"><span>Home</span></a>
+            <a href="/aboutus"> <span>About Us</span></a>
+        </div>
+    </div>
+
+    <div id="blank-area">
+        <img id="banner" src="{{ url_for('static', filename='banner.png') }}">
+    </div>
+
+
+    <div id="image-container">
+        <img id='file-image'>
+        <div></div>
+        <img id='result-image'>
+    </div>
+
+
+    <div id="container">
+        <h1 class="title">Upload your file here</h1>
+        <label for="file-input">
+            <input type="file" id="file-input" class="file-input" accept="image/jpeg,image/jpg">
+            <button id="button">Choose file </button>
+
+        </label>
+
+    </div>
+
+
+
+
+    <div id="error-message"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>

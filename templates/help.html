@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div id="nav-bar">
+        <div class="logo-area">
+            <img src="{{ url_for('static', filename='logo.png') }}">
+            <a href="/help"><span>Help</span></a>
+
+        </div>
+        <div class="nav-area">
+            <a href="/"><span>Home</span></a>
+            <a href="/aboutus"> <span>About Us</span></a>
+        </div>
+    </div>
+
+    <h1>Help</h1>
+
+    <h2>Welcome to the Nepali Handwritten Character Recognizer!</h2>
+
+    This application uses a convolutional neural network (CNN) to recognize handwritten Nepali characters and provides
+    interpretability through an integrated gradient algorithm. The algorithm highlights pixels that contribute most to
+    the predicted character, offering insights into the model's decision-making process.
+
+    <h3>Getting Started</h3>
+
+    1. Upload a clear image of a handwritten Nepali character in supported formats (e.g., PNG, JPEG).
+    2. Click the "Recognize" button.
+    3. The recognized character will be displayed, along with a visualization of the pixels that influenced the
+    prediction.
+
+    <h3>Troubleshooting</h3>
+
+    - If the recognition is incorrect, try uploading a clearer image or using a different font style.
+    - If you encounter technical issues, please contact us at [support email address].
+
+    <h3>FAQ</h3>
+
+    * **What character sets are supported?** Currently, the model recognizes all basic Nepali characters (क्ष, त्र, ज्ञ,
+    etc.).
+    * **How accurate is the recognition?** The accuracy rate is [accuracy percentage] on a standard test dataset.
+    * **Will you add support for more features?** We are actively working on improving the model and adding new
+    features. Stay tuned for updates!
+
+
+</body>
+
+</html>
