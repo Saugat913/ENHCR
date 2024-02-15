@@ -23,3 +23,7 @@ flask run
 #### - [✔️] Handling the upload image and sending image 
 #### - [X] Processing the image and predicting 
 #### - [X] Managing UI of AboutUs and Help page
+
+
+## Contribution
+Contribution is warmly welcomed. Simply fork the project.
